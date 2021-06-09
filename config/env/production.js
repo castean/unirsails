@@ -254,7 +254,7 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
-
+    onlyAllowOrigins: ['https://unirsails.herokuapp.com/'], // change to yours!
 
     /***************************************************************************
     *                                                                          *
