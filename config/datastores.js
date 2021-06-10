@@ -56,14 +56,12 @@ module.exports.datastores = {
     url: process.env.DATABASE_URL,
 
     // Activar y correr en local para poder subir el squema en heroku
-    adapter: "sails-postgresql",
-    // host: 'ec2-34-230-115-172.compute-1.amazonaws.com',
-    // batabase: 'd5sil2dl6e054u',
-    // user: "yvwnwtxersugms",
-    // port: '5432',
-    // password: '4f2ee9b09dbc1470e7be1ac3a829fe1251b8be86d15792b153eb51911e80df61',
+    // adapter: "sails-postgresql",
     // url:"postgres://yvwnwtxersugms:4f2ee9b09dbc1470e7be1ac3a829fe1251b8be86d15792b153eb51911e80df61@ec2-34-230-115-172.compute-1.amazonaws.com:5432/d5sil2dl6e054u",
-    // ssl: false
+    // ssl: {
+    //   sslmode: 'require',
+    //   rejectUnauthorized: false,
+    // }
 
     // URI: postgres://yvwnwtxersugms:4f2ee9b09dbc1470e7be1ac3a829fe1251b8be86d15792b153eb51911e80df61@ec2-34-230-115-172.compute-1.amazonaws.com:5432/d5sil2dl6e054u
     // Heroku CLI: heroku pg:psql postgresql-fitted-48686 --app unirsails
