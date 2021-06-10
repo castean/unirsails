@@ -374,7 +374,7 @@ module.exports = {
   ***************************************************************************/
   custom: {
     //baseUrl: 'https://example.com',
-    baseUrl: 'https://unirsails.herokuapp.com/',
+    baseUrl: 'https://unirsails.herokuapp.com',
     //internalEmailAddress: 'support@example.com',
     internalEmailAddress: 'ing.castean@gmail.com',
 
