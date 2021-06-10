@@ -254,9 +254,7 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
-    //onlyAllowOrigins: ['https://unirsails.herokuapp.com/'] // change to yours!
-    onlyAllowOrigins:[ 'https://unirsails.herokuapp.com' ]
-
+    onlyAllowOrigins: ['https://unirsails.herokuapp.com'] // change to yours!
     /***************************************************************************
     *                                                                          *
     * If you are deploying a cluster of multiple servers and/or processes,     *
@@ -363,7 +361,10 @@ module.exports = {
   *                                                                         *
   **************************************************************************/
   // ssl: undefined,
-
+  ssl: {
+      sslmode: 'require',
+      rejectUnauthorized: false,
+    }
 
 
   /**************************************************************************
