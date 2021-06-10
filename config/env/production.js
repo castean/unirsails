@@ -360,7 +360,7 @@ module.exports = {
   * > https://sailsjs.com/config/*#?sailsconfigssl                          *
   *                                                                         *
   **************************************************************************/
-  ssl: true,
+  // ssl: true,
 
 
 
