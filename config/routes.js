@@ -17,4 +17,11 @@ module.exports.routes = {
   "POST /user/forgot-password": "user/forgot-password",
   "POST /user/reset-password": "user/reset-password",
 
+
+  'GET /tickets': 'TicketsController.index',
+  'POST /ticket': 'TicketsController.create',
+  'GET /ticket/:id': 'TicketsController.show',
+  'PUT /ticket/:id': 'TicketsController.update',
+  'DELETE /ticket/:id': 'TicketsController.delete',
+
 };

@@ -11,6 +11,7 @@
     "nodemailer": "^6.6.1",
     "nodemailer-express-handlebars": "^4.0.0",
     "nodemailer-sendgrid": "^1.0.3",
+    "nodemon": "^2.0.7",
     "sails": "^1.4.2",
     "sails-hook-organics": "^2.2.0",
     "sails-hook-orm": "^3.0.2",

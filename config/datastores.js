@@ -51,30 +51,26 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 
-    // Activar para subir a heroku y comentar para correr el comando sails lift
+    // ======================= Adaptador para POSTGRESQL =================================
     adapter: "sails-postgresql",
+
+    // ======================= Activar para subir a heroku ===============================
     url: process.env.DATABASE_URL,
     ssl: {
         sslmode: 'require',
         rejectUnauthorized: false,
       }
 
-    // Activar y correr en local para poder subir el squema en heroku
-    // adapter: "sails-postgresql",
+    // =========== Activar y correr en local para poder subir el squema en heroku correr sails lift ==================
     // url:"postgres://yvwnwtxersugms:4f2ee9b09dbc1470e7be1ac3a829fe1251b8be86d15792b153eb51911e80df61@ec2-34-230-115-172.compute-1.amazonaws.com:5432/d5sil2dl6e054u",
     // ssl: {
     //   sslmode: 'require',
     //   rejectUnauthorized: false,
     // }
 
-    // URI: postgres://yvwnwtxersugms:4f2ee9b09dbc1470e7be1ac3a829fe1251b8be86d15792b153eb51911e80df61@ec2-34-230-115-172.compute-1.amazonaws.com:5432/d5sil2dl6e054u
-    // Heroku CLI: heroku pg:psql postgresql-fitted-48686 --app unirsails
-
     // ========================================= PARA CORRER EN LOCAL ========================================
-    // adapter: 'sails-postgresql',
     // url: 'postgres://castean:Gr3Nitas@localhost:5432/soporteunir', // Replace with your own connection URL
-    //  postgres://{user}:{password}@{hostname}:{port}/{database-name}
-
+    // postgres://{user}:{password}@{hostname}:{port}/{database-name}
 
     //  port: '5432',
     //  host: 'localhost',

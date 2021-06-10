@@ -4,13 +4,13 @@ module.exports = {
   inputs: {
     token: {
       type: 'string',
-      description: "El token de confirmacion del email.",
+      description: "El token de confirmacion del correo.",
       example: "4-32fad81jdaf$329",
     },
   },
   exits: {
     success: {
-      description: "Email confirmado y requiere que el usuario entre.",
+      description: "Correo confirmado y requiere que el usuario entre.",
     },
     invalidOrExpiredToken: {
       statusCode: 400,

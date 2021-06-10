@@ -26,7 +26,7 @@ module.exports = {
     },
     emailAlreadyInUse: {
       statusCode: 400,
-      description: 'Direccion Email ya esta en uso',
+      description: 'Direccion correo ya esta en uso',
     },
     error: {
       description: 'Algo salio mal',

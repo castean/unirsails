@@ -15,7 +15,7 @@ module.exports = {
 
   exits: {
     success: {
-      description: "Login exitoso",
+      description: "Acceso exitoso",
     },
     notAUser: {
       statusCode: 404,
@@ -23,7 +23,7 @@ module.exports = {
     },
     passwordMismatch: {
       statusCode: 401,
-      description: "Password no coincide o está incorrecto",
+      description: "Contraseña no coincide o está incorrecto",
     },
     operationalError: {
       statusCode: 400,
@@ -49,7 +49,7 @@ module.exports = {
 
 
       return exits.success({
-        message: `${user.email} logeado exitosamente`,
+        message: `El ${user.email} acceso exitosamente`,
         data: user,
         token,
       });
@@ -58,12 +58,12 @@ module.exports = {
       sails.log.error(error);
       if (error.isOperational) {
         return exits.operationalError({
-          message: `Error al hacer login y tratar de entrar como ${inputs.email}, error de token`,
+          message: `Error al tratar de entrar como ${inputs.email}, error de token`,
           error: error.raw,
         });
       }
       return exits.error({
-        message: `Error accesando como ${inputs.email}`,
+        message: `Error entrando como ${inputs.email}`,
         error: error.message,
       });
     }

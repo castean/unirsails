@@ -4,7 +4,7 @@ module.exports = {
 
   inputs: {
     email: {
-      description: 'El email del usuario que quiere recuperar el password.',
+      description: 'El correo del usuario que quiere recuperar el password.',
       example: 'nombre@midominio.com',
       type: 'string',
       required: true,
@@ -13,7 +13,7 @@ module.exports = {
 
   exits: {
     success: {
-      description: 'Email coincide con el usuario y será enviado un email',
+      description: 'Correo coincide con el usuario y será enviado un email',
     },
   },
 

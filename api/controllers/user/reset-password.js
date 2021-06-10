@@ -9,7 +9,7 @@ module.exports = {
       required: true,
     },
     token: {
-      description:'El token del password que estaba en la contraseña olvidada',
+      description:'El token de la contraseña que estaba en la anterior',
       example: 'gwa8gs8hgw9h2g9hg29',
       required: true,
     },
