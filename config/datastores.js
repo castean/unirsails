@@ -54,6 +54,10 @@ module.exports.datastores = {
     // Activar para subir a heroku y comentar para correr el comando sails lift
     adapter: "sails-postgresql",
     url: process.env.DATABASE_URL,
+    ssl: {
+        sslmode: 'require',
+        rejectUnauthorized: false,
+      }
 
     // Activar y correr en local para poder subir el squema en heroku
     // adapter: "sails-postgresql",
